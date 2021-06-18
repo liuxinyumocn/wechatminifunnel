@@ -7,9 +7,9 @@
     </view>
 
     <view 
-        bindtouchmove="containerTap"
-        bindtouchstart="containerTap"
-        bindtouchend="containerTapCancel"
+        catchtouchmove="containerTap"
+        catchtouchstart="containerTap"
+        catchtouchend="containerTapCancel"
         wx:if="{{ errmsg == '' }}"
         id="funnel_charts_box"
         class="funnel_container">
