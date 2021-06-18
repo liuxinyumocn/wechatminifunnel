@@ -1,0 +1,113 @@
+
+.liucharts_box{
+    width: 100%;
+    min-height: 200px;
+    /* background-color: red; */
+}
+
+.liucharts_line_box{
+    position: relative;
+    margin-bottom: 17px;
+    height: 42px;
+    /* background-color: green; */
+}
+
+.liucharts_line_title{
+    position: absolute;
+    z-index: 99;
+    text-align: left;
+    /* background-color: red; */
+    width: 80px;
+    height: 42px; 
+    display: table;
+}
+
+.liucharts_line_title_content{
+    display: table-cell;
+    vertical-align: middle;
+    color: rgba(0, 0, 0 ,0.9);
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+.liucharts_line_databox{
+  display: inline-block;
+  /* background-color: blue; */
+  height: 42px;
+  width: calc(100% - 80px);
+  position: absolute;
+  left: 80px;
+  top: 0px;
+}
+
+.liucharts_line_databox_data{
+    height: 21px;
+    /* background-color: rgb(34, 150, 134); */
+    /* line-height: 21px; */
+}
+
+.liucharts_line_databox_data_img{
+    position: relative;
+    display: inline-block;
+    height: 21px;
+}
+
+.liucharts_line_databox_data_data{
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+    margin-left: 5px;
+    /* background-color: red; */
+}
+
+.liucharts_line_databox_data_per{
+  display: inline-block;
+  height: 21px;
+  line-height: 21px;
+  font-size: 14px;
+  color: rgb(181, 181, 181);
+}
+
+.liucharts_open{
+    position: relative;
+    color: #939393;
+    font-size: 14px;
+    /* background-color: red; */
+    display: inline-block;
+    width: 60px;
+    margin-top: 10px;
+}
+.liucharts_open_icon{
+    position: absolute;
+    left: 35px;
+    top: 5px;
+    width: 12px;
+    height: 9px;
+}
+
+.liucharts_points{
+    margin-top: 10px;
+}
+
+.liucharts_points_item{
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.liucharts_points_icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.liucharts_points_name{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #939393;
+}

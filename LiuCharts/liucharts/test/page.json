@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "doubleline":"../../components/doubleline/doubleline",
+    "funnelchart":"../../components/funnelchart/funnelchart"
+  }
+}

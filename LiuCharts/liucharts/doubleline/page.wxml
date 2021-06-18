@@ -1,0 +1,97 @@
+
+<view class="block__box">
+
+    <view class="liucharts_box">
+        <view class="liucharts_line_box">
+            <view class="liucharts_line_title">
+                <view class="liucharts_line_title_content">广告买量</view>
+            </view>
+            <view class="liucharts_line_databox">
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img" style="background-color: rgb(108,132,194); width: 50px; color: rgb(108,132,194); ">.</view>
+                    <view class="liucharts_line_databox_data_data"  style="color: rgb(108,132,194);">12</view>
+                    <view class="liucharts_line_databox_data_per">，20%</view>
+                </view>
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img"  style="background-color: rgb(242, 190, 86); width: 150px; color: rgb(242, 190, 86); ">.</view>
+                    <view class="liucharts_line_databox_data_data" style="color: rgb(242, 190, 86);">60</view>
+                    <view class="liucharts_line_databox_data_per">，80%</view>
+                </view>
+            </view>
+        </view>
+        <view class="liucharts_line_box">
+            <view class="liucharts_line_title">
+                <view class="liucharts_line_title_content">分享</view>
+            </view>
+            <view class="liucharts_line_databox">
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img" style="background-color: rgb(108,132,194); width: 160px; color: rgb(108,132,194); ">.</view>
+                    <view class="liucharts_line_databox_data_data"  style="color: rgb(108,132,194);">12</view>
+                    <view class="liucharts_line_databox_data_per">，20%</view>
+                </view>
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img"  style="background-color: rgb(242, 190, 86); width: 10px; color: rgb(242, 190, 86); ">.</view>
+                    <view class="liucharts_line_databox_data_data" style="color: rgb(242, 190, 86);">60</view>
+                    <view class="liucharts_line_databox_data_per">，80%</view>
+                </view>
+            </view>
+        </view>
+        <view class="liucharts_line_box">
+            <view class="liucharts_line_title">
+                <view class="liucharts_line_title_content">搜索</view>
+            </view>
+            <view class="liucharts_line_databox">
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img" style="background-color: rgb(108,132,194); width: 4px; color: rgb(108,132,194); ">.</view>
+                    <view class="liucharts_line_databox_data_data"  style="color: rgb(108,132,194);">12</view>
+                    <view class="liucharts_line_databox_data_per">，20%</view>
+                </view>
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img"  style="background-color: rgb(242, 190, 86); width: 120px; color: rgb(242, 190, 86); ">.</view>
+                    <view class="liucharts_line_databox_data_data" style="color: rgb(242, 190, 86);">60</view>
+                    <view class="liucharts_line_databox_data_per">，80%</view>
+                </view>
+            </view>
+        </view>
+        <view class="liucharts_line_box">
+            <view class="liucharts_line_title">
+                <view class="liucharts_line_title_content">任务栏+小程序列表</view>
+            </view>
+            <view class="liucharts_line_databox">
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img" style="background-color: rgb(108,132,194); width: 90px; color: rgb(108,132,194); ">.</view>
+                    <view class="liucharts_line_databox_data_data"  style="color: rgb(108,132,194);">12</view>
+                    <view class="liucharts_line_databox_data_per">，20%</view>
+                </view>
+                <view class="liucharts_line_databox_data">
+                    <view class="liucharts_line_databox_data_img"  style="background-color: rgb(242, 190, 86); width: 50px; color: rgb(242, 190, 86); ">.</view>
+                    <view class="liucharts_line_databox_data_data" style="color: rgb(242, 190, 86);">60</view>
+                    <view class="liucharts_line_databox_data_per">，80%</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="liucharts_open">
+            <view class="liucharts_open_text">收起</view>
+            <image class="liucharts_open_icon" src="./up.png"></image>
+        </view>
+        <!-- <view class="liucharts_open">
+            <view class="liucharts_open_text">展开</view>
+            <image class="liucharts_open_icon" src="./down.png"></image>
+        </view> -->
+
+        <view class="liucharts_points">
+            <view class="liucharts_points_item">
+                <view class="liucharts_points_icon" style="background-color: rgb(108,132,194);"></view>
+                <view class="liucharts_points_name">此游戏</view>
+            </view>
+            <view class="liucharts_points_item">
+                <view class="liucharts_points_icon" style="background-color: rgb(242, 190, 86);"></view>
+                <view class="liucharts_points_name">行业</view>
+            </view>
+        </view>
+
+    </view>
+
+
+</view>

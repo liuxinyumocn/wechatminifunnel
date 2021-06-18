@@ -1,0 +1,61 @@
+
+.funnel_container{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    display: table;
+    font-size: 15px;
+}
+
+.funnel_header{
+    color: rgb(150, 150, 150);
+}
+
+.funnel_row{
+    display: table-header-group;
+}
+
+.funnel_col{
+    display: table-cell;
+    /* border: 1px solid red; */
+}
+
+.funnel_text{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.funnel_block{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+.funnel_msgbox{
+    min-width: 90px;
+    min-height: 40px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.336);
+    position: absolute;
+    color: white;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+}
+
+.liucharts_err{
+    line-height: 200px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(136, 136, 136)
+}
+
+.liucharts_box{
+  width: 100%;
+  min-height: 200px;
+  /* background-color: red; */
+}

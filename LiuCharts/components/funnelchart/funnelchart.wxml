@@ -1,0 +1,72 @@
+
+    <view
+        wx:if="{{ errmsg != '' }}"
+        id="liucharts_line_databox"
+        class="liucharts_box liucharts_err">
+        {{ errmsg }}
+    </view>
+
+    <view 
+        bindtouchmove="containerTap"
+        bindtouchstart="containerTap"
+        bindtouchend="containerTapCancel"
+        wx:if="{{ errmsg == '' }}"
+        id="funnel_charts_box"
+        class="funnel_container">
+        <!-- 悬浮窗口 -->
+        <view 
+            id="funnel_charts_tipper_box"
+            wx:if="{{ tipper.show && tipperdata[tipper.col] }}" 
+            class="funnel_msgbox"
+            style="left:{{tipper.left}}px;top:{{tipper.top}}px;"
+            >
+            <view
+                wx:for="{{ tipperdata[tipper.col] }}"
+                >
+                {{item}}
+            </view>
+        </view>
+
+        <!-- 表头 -->
+        <view 
+            wx:if="{{header.length > 0}}"
+            class="funnel_row funnel_header">
+            <view 
+                wx:for="{{header}}"
+                class="funnel_col" style="width:{{colWidth[index]}}px;height:40px;">
+                {{item.name}}
+            </view>
+        </view>
+
+        <view 
+            wx:for="{{body}}"
+            wx:for-index="body_id" 
+            wx:for-item="body_item"
+            data-col="{{body_id}}"
+            bindtouchmove="dataTap"
+            bindtouchstart="dataTap"
+            class="funnel_row">
+
+            <view 
+                wx:for="{{body_item}}"
+                wx:for-index="cell_id" 
+                wx:for-item="cell_item"
+                class="funnel_col" style="width:{{colWidth[cell_id]}}px">
+                <view 
+                    wx:if="{{cell_id != chartid}}"
+                    class="funnel_text" 
+                    style="width:{{colWidth[cell_id]}}px">
+                    {{cell_item}}
+                </view>
+
+                <view 
+                    wx:if="{{cell_id == chartid}}"
+                    class="funnel_block"
+                    style=" width: {{chart[body_id]}}px; background-color: {{color[body_id]}}; color: {{textColor}};"
+                    >
+                    {{cell_item}}
+                </view>
+            </view>
+        </view>
+
+    </view>

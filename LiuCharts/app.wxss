@@ -1,0 +1,21 @@
+/* liucharts/doubleline/page.wxss */
+
+page {
+  background-color: #F4F4F4;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.block__box{
+    width: 700rpx;
+    margin: 10px auto;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(4, 44, 199, 0.06);
+    
+}
