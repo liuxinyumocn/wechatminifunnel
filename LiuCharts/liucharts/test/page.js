@@ -48,11 +48,11 @@ Page({
             labels  :[
                 {
                     name    :'此游戏',
-                    color   :'rgb(108,132,194)',
+                    color   :'#7283ba',
                 },
                 {
                     name    :'行业',
-                    color   :'rgb(242, 190, 86)',  
+                    color   :'#79c1d3',  
                 },
             ],
             list:[

@@ -298,7 +298,7 @@ Component({
                         }
                         break;
                     default:
-                        sort = true;
+                        sort = false;
                 }
             }
 
