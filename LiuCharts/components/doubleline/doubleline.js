@@ -118,7 +118,7 @@ Component({
     behaviors: [],
     methods: {
         show(data){
-            let _data = deepCopy(data,defauleData);
+            let _data = deepCopy(data,JSON.parse(JSON.stringify(defauleData)));
             if(_data.error){
                 this.err(_data.errmsg);
                 return;

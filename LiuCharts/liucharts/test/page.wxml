@@ -5,7 +5,19 @@
 </view>
 
 <view class="block__box">
+    <doubleline 
+        id="doubleline2"
+    ></doubleline>
+</view>
+
+<view class="block__box">
     <funnelchart 
         id="funnelchartid"
+    ></funnelchart>
+</view>
+
+<view class="block__box">
+    <funnelchart 
+        id="funnelchartid2"
     ></funnelchart>
 </view>

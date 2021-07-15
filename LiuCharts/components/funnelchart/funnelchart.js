@@ -86,6 +86,7 @@ function is(obj, type) {
  * @ return {Object} newObj: 拷贝之后的对象
  */
 function deepCopy(oldObj = {}, newObj = {}) {
+
     for (var key in oldObj) {
         var copy = oldObj[key];
         if (oldObj === copy) continue; //如window.window === window，会陷入死循环，需要处理一下
@@ -166,11 +167,12 @@ Component({
     methods: {
         show(data) {
             if (!this.data.currentData || data.defaule) {
-                this.data.currentData = deepCopy(data, defauleData);
+                this.data.currentData = deepCopy(data, JSON.parse(JSON.stringify(defauleData)));
             } else {
                 this.data.currentData = deepCopy(data, this.data.currentData);
             }
             let _data = this.data.currentData;
+            // this.data.currentData = JSON.parse(JSON.stringify(_data))
             if (_data.error) {
                 this.err(_data.errmsg);
                 return;
@@ -183,6 +185,7 @@ Component({
                 query.select('#funnel_charts_box').boundingClientRect();
                 query.exec((res) => {
                     let width = res[0].width;
+                    console.log(55555,this);
                     this._parseData(width);
                 });
             }
@@ -194,7 +197,7 @@ Component({
             })
         },
         _parseData(maxWidth) {
-            console.log(this.data.currentData);
+            console.log(123,JSON.stringify(this.data.currentData))
             let _data = this.data.currentData;
             let padding = _data.style.padding * 2;
 
@@ -351,7 +354,7 @@ Component({
                 color: _color,
                 tipperdata: _tipperdata,
             })
-            console.log({
+            console.log(1111,{
                 colWidth: _col,
                 header: _header,
                 body: _body,
@@ -446,8 +449,8 @@ Component({
         }
     },
     attached() {
-        this.show({
+        // this.show({
 
-        })
+        // })
     }
 });
